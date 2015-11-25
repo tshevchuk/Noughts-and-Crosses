@@ -10,9 +10,9 @@ public class Main {
         System.out.println("   |   | ");
         System.out.println("---+---+---");
         System.out.println("   |   | ");
-        int i = 1;
-        while (i <= 9) {
-            i++;
+        int p = 1;
+        while (p <= 9) {
+            p++;
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             int x = Integer.parseInt(reader.readLine());
             if (x == 1) {
