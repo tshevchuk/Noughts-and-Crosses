@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.Buffer;
 
 public class Main {
     public static void main(String args[]) throws IOException {
@@ -9,11 +10,11 @@ public class Main {
         System.out.println("   |   | ");
         System.out.println("---+---+---");
         System.out.println("   |   | ");
-        int o = 1;
-        while (o == 1) {
+        int i = 1;
+        while (i <= 9) {
+            i++;
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             int x = Integer.parseInt(reader.readLine());
-
             if (x == 1) {
                 System.out.println("   |   |  ");
                 System.out.println("---+---+--- ");
@@ -69,6 +70,64 @@ public class Main {
                 System.out.println("---+---+---");
                 System.out.println("   |   | ");
             }
+            BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+            int o = Integer.parseInt(reader1.readLine());
+            if (o == 1) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println(" o |   | ");
+            } else if (o == 2) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   | o | ");
+            } else if (o == 3) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | o");
+            } else if (o == 4) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println(" o |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            } else if (o == 5) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   | o | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            } else if (o == 6) {
+                System.out.println("   |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | o");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            } else if (o == 7) {
+                System.out.println(" o |   |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            } else if (o == 8) {
+                System.out.println("   | o |  ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            } else if (o == 9) {
+                System.out.println("   |   | o ");
+                System.out.println("---+---+--- ");
+                System.out.println("   |   | ");
+                System.out.println("---+---+---");
+                System.out.println("   |   | ");
+            }
         }
+
     }
 }
